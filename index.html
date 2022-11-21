@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FE basic layout 2</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="slider">
+            <p class="text-header">Quote and innerpeace</p>
+            <div class="slider-img">
+                <div class="slider-img-wrap">
+                    <div class="slider-item" data-index="0">
+                        <img src="/Image/img1.png" alt="">
+                    </div>
+                    <div class="slider-item" data-index="1">
+                        <img src="./Image/img2.png" alt="">
+                    </div>
+                    <div class="slider-item" data-index="2">
+                        <img src="./Image/img3.png" alt="">
+                    </div>
+                    <div class="slider-item" data-index="3">
+                        <img src="./Image/img2.png" alt="">
+                    </div>
+                    <div class="slider-item" data-index="4">
+                        <img src="./Image/img3.png" alt="">
+                    </div>
+                    <div class="slider-item" data-index="5">
+                        <img src="/Image/img1.png" alt="">
+                    </div>
+                </div>
+                <img class="slider-btn-left" src="./Image/Vector.png" alt="">
+                <img class="slider-btn-right" src="./Image/Vector.png" alt="">
+                <div class="slider-footer">
+                    <div class="sub-text">
+                        <p class="sub-text-content">"All the world's a stage, and all the men and women merely
+                            players"</p>
+                        <p class="sub-text-author">Williams Shakespeare</p>
+                    </div>
+                    <ul class="slider-dots-container">
+                        <li class="slider-dot-item slider-active" data-index="0"></li>
+                        <li class="slider-dot-item" data-index="1"></li>
+                        <li class="slider-dot-item" data-index="2"></li>
+                        <li class="slider-dot-item" data-index="3"></li>
+                        <li class="slider-dot-item" data-index="4"></li>
+                        <li class="slider-dot-item" data-index="5"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-collection">
+                <div class="slider-collection-img slider-collection-active" data-index="0">
+                    <img src="./Image/img1.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+                <div class="slider-collection-img" data-index="1">
+                    <img src="./Image/img2.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+                <div class="slider-collection-img" data-index="2">
+                    <img src="./Image//img3.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+                <div class="slider-collection-img" data-index="3">
+                    <img src="./Image/img2.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+                <div class="slider-collection-img" data-index="4">
+                    <img src="./Image//img3.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+                <div class="slider-collection-img" data-index="5">
+                    <img src="./Image/img1.png" alt="">
+                    <div class="bin-container">
+                        <img src="./Image/bin-head.png" alt="">
+                        <img src="./Image/bin-foot.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="form-container">
+            <p class="form-title">Add more quote</p>
+            <div class="ip-container">
+                <div class="ip-container-wrap">
+                    <input name="author" id="author" type="text" placeholder="Author" required>
+                    <p class="error" id="error_author"></p>
+                    <textarea name="quote" id="quote" cols="30" rows="4" placeholder="Quote" required></textarea>
+                    <p class="error quote" id="error_quote"></p>
+                    <span class="ip_file">
+                        Add file<input name="file" id="file" type="file" name="" id="" placeholder="Add file"
+                            accept="image/aces" required>
+                    </span>
+                </div>
+                <div class="img-add">
+                    <img src="./Image/blue-butterfly.png" alt="Please choose">
+                </div>
+            </div>
+            <button type="submit" class="btn-add"><span>Add</span></button>
+        </form>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
